@@ -1,35 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import Comp2 from './Component/Comp2';
+import Hooks from './Component/Hooks';
+import JavascriptComp from './Component/JavascriptComp';
+import MyComp from './Component/MyComp';
 function App() {
-  const [count, setCount] = useState(0)
+ const  num = 25;
+ const  fruit = "Mango";
+ const  car = "Carola";
+return(
+  <>
+    <h1>Hello World!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse autem similique dolor vel nisi incidunt maiores eius vitae soluta eum! Possimus iusto corporis ab necessitatibus ipsum totam aperiam fugit perferendis.</p>
+    <img src="https://media.istockphoto.com/id/113494458/photo/fire-isolated-over-black-background.jpg?s=612x612&w=0&k=20&c=u6STGsSpJAyBN8kDeqnVUla4-0SnLpdaTsehFsey2p0=" alt="" />
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <MyComp  number = {num} fruit = {fruit}/>
+    <Comp2 number = {num} fruit = {fruit} car = {car}/>
+    <br/>
+    <br/>
+   <JavascriptComp/>
+   <Hooks/>
+  </>
+)
 }
 
-export default App
+export default App;
