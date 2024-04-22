@@ -16,9 +16,9 @@ const Hooks = () => {
       <h2>useState</h2>
       <p>The value of a is : {a}</p>
       <p>The value of num is : {num}</p>
-      <button onClick={() => increment()}>increment</button>
+      <button onClick={() => increment()}>increment heloo</button>
       <br />
-      <input type='text' name='' id='' placeholder='enter value' onChange={(e) => {setName.(e.target.value); }}/>
+      <input type='text' name='' id='' placeholder='enter value' onChange={(e) => {setName(e.target.value); }}/>
       <p>Name : {name}</p>
     </div>
   )
