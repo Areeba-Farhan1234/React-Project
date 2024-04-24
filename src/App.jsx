@@ -1,3 +1,4 @@
+import Api from './Component/Api';
 import Comp2 from './Component/Comp2';
 import Hooks from './Component/Hooks';
 import JavascriptComp from './Component/JavascriptComp';
@@ -18,6 +19,7 @@ return(
     <br/>
    <JavascriptComp/>
    <Hooks/>
+   <Api/>
   </>
 )
 }
