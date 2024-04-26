@@ -3,6 +3,7 @@ import Comp2 from './Component/Comp2';
 import Hooks from './Component/Hooks';
 import JavascriptComp from './Component/JavascriptComp';
 import MyComp from './Component/MyComp';
+import Navbar from './Component/Navbar';
 function App() {
  const  num = 25;
  const  fruit = "Mango";
@@ -10,6 +11,7 @@ function App() {
 return(
   <>
     <h1>Hello World!</h1>
+    <Navbar/>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse autem similique dolor vel nisi incidunt maiores eius vitae soluta eum! Possimus iusto corporis ab necessitatibus ipsum totam aperiam fugit perferendis.</p>
     <img src="https://media.istockphoto.com/id/113494458/photo/fire-isolated-over-black-background.jpg?s=612x612&w=0&k=20&c=u6STGsSpJAyBN8kDeqnVUla4-0SnLpdaTsehFsey2p0=" alt="" />
 
